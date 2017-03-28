@@ -59,7 +59,6 @@ public class Main {
             outputDiffList.add(diffItem);
         }
 
-//        outputCSV(args[2], outputDiffList);
         outputMarkdown(args, outputDiffList);
 
         System.out.println("APK compare done!");
@@ -121,26 +120,6 @@ public class Main {
 
         } catch (IOException e) {
             e.printStackTrace();
-        }
-    }
-
-    private static void outputMarkdownDiffList(Writer writer, String title, List<DiffItem> outputDiffList) {
-        if (outputDiffList.size() > 0) {
-            try {
-                writer.append("## ").append(title).append("\n");
-                writer.append("| OLD FILE | NEW FILE | DIFF SIZE (byte)|\n");
-                writer.append("| -------- | -------- | -------------: |\n");
-                for (DiffItem diffItem : outputDiffList) {
-                    writer.append("| ").append(diffItem.oldFilename).append(" | ")
-                            .append(diffItem.newFilename).append(" | ")
-                            .append(diffItem.diffSize.toString())
-                            .append(" |\n");
-                    writer.flush();
-                }
-                writer.write("\n");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 
@@ -225,21 +204,6 @@ public class Main {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-    }
-
-    private static void outputCSV(String filename, List<DiffItem> outputDiffList) {
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(filename + ".csv"));
-            writer.append("OLD FILE,NEW FILE,DIFF SIZE(byte)\n");
-            for (DiffItem diffItem : outputDiffList) {
-                writer.append(diffItem.oldFilename).append(',')
-                        .append(diffItem.newFilename).append(',')
-                        .append(diffItem.diffSize.toString())
-                        .append('\n');
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
