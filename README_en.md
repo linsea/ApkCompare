@@ -1,12 +1,12 @@
-## 比较两个版本APK中文件差异的工具
-比较两个版本APK中文件的大小差异,以便分析APK增大的原因.
+## A tool for 2 version APK files Comparision
+A tool for Comparision 2 version APK files to find out files size changes.
 
-### 使用方法
-[下载](https://github.com/linsea/ApkCompare/blob/master/release/apkcompare-1.0.jar)jar文件,然后运行:
+### Usage
+[Download](https://github.com/linsea/ApkCompare/blob/master/release/apkcompare-1.0.jar)jar, then run:
 ```
 java -jar apkcompare-1.0.jar app-1.0.apk app-2.0.apk v2_v1
 ```
-其中参数`app-1.0.apk`是1.0版本的APK,`app-2.0.apk`是2.0版本的APK,`v2_v1`是输出差异结果的文件名,最终的输出是一个Markdown格式的文件(size列排序过了),比如:
+argument `app-1.0.apk` is v1.0 APK,`app-2.0.apk` is v2.0 APK,`v2_v1` is output file name, which is a Markdown file(the size column is sorted), e.g.
 
 -------------------------------------------
 
@@ -44,7 +44,6 @@ java -jar apkcompare-1.0.jar app-1.0.apk app-2.0.apk v2_v1
 | --------- | ---------: |
 | res/layout/A.xml  | -42,471 |
 | res/drawable/b.png | -32,755 |
-
 
 
 -------------------------------------------
