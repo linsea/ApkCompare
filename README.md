@@ -4,7 +4,7 @@
 比较两个版本APK中文件的大小差异,以便分析APK增大的原因.
 
 ### 使用方法
-[下载 jar](https://github.com/linsea/ApkCompare/blob/master/release/apkcompare-1.0.jar) 文件,然后运行:
+[下载 jar](https://github.com/linsea/ApkCompare/raw/master/release/apkcompare-1.0.jar) 文件,然后运行:
 ```
 java -jar apkcompare-1.0.jar app-1.0.apk app-2.0.apk v2_v1
 ```

@@ -2,7 +2,7 @@
 A tool for Comparision 2 version APK files to find out files size changes.
 
 ### Usage
-[Download jar](https://github.com/linsea/ApkCompare/blob/master/release/apkcompare-1.0.jar) , then run:
+[Download jar](https://github.com/linsea/ApkCompare/raw/master/release/apkcompare-1.0.jar) , then run:
 ```
 java -jar apkcompare-1.0.jar app-1.0.apk app-2.0.apk v2_v1
 ```
