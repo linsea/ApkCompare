@@ -1,3 +1,5 @@
+### [English Version](README_en.md)
+
 ## 比较两个版本APK中文件差异的工具
 比较两个版本APK中文件的大小差异,以便分析APK增大的原因.
 
