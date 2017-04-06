@@ -104,6 +104,10 @@ public class Main {
 
             writer.write("### Diff Compressed Size : ");
             writer.write(format.format(newApkFile.length() - oldApkFile.length()));
+            writer.write(" bytes\n");
+
+            writer.write("### Diff Raw Size : ");
+            writer.write(format.format(addedCnt + increasedCnt + decreasedCnt + removedCnt));
             writer.write(" bytes\n\n");
 
             writer.write("| Changed Files | Diff Raw Size (byte) |\n");

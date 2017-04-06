@@ -13,13 +13,14 @@ java -jar apkcompare-1.0.jar app-1.0.apk app-2.0.apk v2_v1
 -------------------------------------------
 
 ### Diff Compressed Size : 1,505 bytes
+### Diff Raw Size : 2,527 bytes
 
 | Changed Files | Diff Raw Size (byte) |
 | --------- | ---------: |
 | **[Added new file](#added)** | 3,395 |
 | **[Increased file](#increased)** | 3,169 |
-| **[Decreased file](#decreased)** | 3,069 |
-| **[Removed file](#removed)** | 1,469 |
+| **[Decreased file](#decreased)** | -3,069 |
+| **[Removed file](#removed)** | -1,469 |
 
 ## Added New Files (新版本中新增的文件) <a name="added"></a>
 | File Name | Size (byte)|
