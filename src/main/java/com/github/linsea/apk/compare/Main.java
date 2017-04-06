@@ -215,8 +215,8 @@ public class Main {
             while (entries.hasMoreElements()) {
                 ZipEntry entry = entries.nextElement();
                 String filename = entry.getName();
-                long compressedSize = entry.getCompressedSize();
-                map.put(filename, compressedSize);
+                long size = entry.getSize();
+                map.put(filename, size);
             }
         } catch (IOException e) {
             e.printStackTrace();
