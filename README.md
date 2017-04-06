@@ -12,8 +12,9 @@ java -jar apkcompare-1.0.jar app-1.0.apk app-2.0.apk v2_v1
 
 -------------------------------------------
 
+### Diff Compressed Size : 1,505 bytes
 
-| Changed Files | Diff Size (byte) |
+| Changed Files | Diff Raw Size (byte) |
 | --------- | ---------: |
 | **[Added new file](#added)** | 3,395 |
 | **[Increased file](#increased)** | 3,169 |

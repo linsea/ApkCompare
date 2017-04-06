@@ -102,11 +102,11 @@ public class Main {
             writer.write(newApkFile.getName());
             writer.write("\n\n");
 
-            writer.write("### Diff Size : ");
+            writer.write("### Diff Compressed Size : ");
             writer.write(format.format(newApkFile.length() - oldApkFile.length()));
             writer.write(" bytes\n\n");
 
-            writer.write("| Changed Files | Diff Size (byte) |\n");
+            writer.write("| Changed Files | Diff Raw Size (byte) |\n");
             writer.write("| --------- | ---------: |\n");
             writer.append("| **[Added new Files](#added)** | ").append(format.format(addedCnt)).append(" | \n");
             writer.append("| **[Increased Files](#increased)** | ").append(format.format(increasedCnt)).append(" | \n");
